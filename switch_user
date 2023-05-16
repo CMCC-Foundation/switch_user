@@ -1,0 +1,8 @@
+if [[ -z $1 ]];
+then
+        echo "ERROR: You must specify the user you want to switch to."
+	exit 1
+fi
+
+
+sudo -u $1 -i
